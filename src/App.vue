@@ -17,13 +17,15 @@ const fontClass = computed(() => {
 <template>
   <div :class="fontClass">
     <Header/>
-    <RouterView/>
+    <div class="main">
+      <RouterView/>
+    </div>
   </div>
 </template>
 
 <style>
 :root {
-  --primary: #F2B880;
+  --primary: #ffb66d;
   --secondary: #C98686;
   --background: #FFF4EC;
   --button: #381D2A;
@@ -33,8 +35,12 @@ const fontClass = computed(() => {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 1rem;
   line-height: 1.5;
+}
+
+body{
+  background: var(--background);
 }
 
 .font-fr,
@@ -45,8 +51,8 @@ const fontClass = computed(() => {
 .font-kr {
   font-family: "Gowun Dodum", sans-serif;
 }
-
-body{
-  background: var(--background);
+.main{
+  height: calc(100dvh - 96px);
+  padding: 1rem;
 }
 </style>
