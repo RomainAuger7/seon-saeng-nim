@@ -23,9 +23,15 @@ const closeSidebar = () => {
         </button>
       </li>
       <li class="logo-li">
-        <img src="/img/flower.png" alt="flower" width="48" height="48" />
-        <img src="/img/soju.png" alt="soju" width="48" height="48" />
-        <img src="/img/south-korea.png" alt="south-korea" width="48" height="48" />
+        <div class="flower">
+          <img src="/img/flower.png" alt="flower" width="48" height="48" />
+        </div>
+        <div class="soju">
+          <img src="/img/soju.png" alt="soju" width="48" height="48" />
+        </div>
+        <div class="flag">
+          <img src="/img/south-korea.png" alt="south-korea" width="48" height="48" />
+        </div>
       </li>
       <li>
         <RouterLink :to="{ name: 'HomePage' }" @click="closeSidebar">
@@ -46,6 +52,17 @@ const closeSidebar = () => {
     </ul>
   </nav>
   <div id="overlay" v-show="isOpen" @click="toggleSidebar" aria-hidden="true"></div>
+  <div class="logo-mobile">
+    <div class="flower">
+      <img src="/img/flower.png" alt="flower" width="48" height="48" />
+    </div>
+    <div class="soju">
+      <img src="/img/soju.png" alt="soju" width="48" height="48" />
+    </div>
+    <div class="flag">
+      <img src="/img/south-korea.png" alt="south-korea" width="48" height="48" />
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -65,13 +82,20 @@ const closeSidebar = () => {
   padding-left: 1em;
   gap: 1.2em;
 }
+
+.flower:hover,
+.soju:hover,
+.flag:hover {
+  transform: scale(1.2);
+}
+
 .header-nav li {
   display: flex;
 }
 .header-nav a {
   display: flex;
   text-decoration: none;
-  color: var(--button);
+  color: rgb(0, 0, 0);
   padding: 1em 1em;
   font-size: 1.7em;
   font-weight: bold;
@@ -79,12 +103,15 @@ const closeSidebar = () => {
 }
 .header-nav a:hover {
   background: linear-gradient(0deg, rgba(255, 182, 109, 1) 0%, rgb(231, 154, 76) 100%);
-  color: #482c3a;
+  color: rgba(0, 0, 0, 0.8);
   transform: translateY(-2px);
 }
 .selector-li {
   display: flex;
   padding: 0.5em 1em;
+}
+.logo-mobile {
+  display: none;
 }
 
 #open-sidebar-button {
@@ -132,15 +159,21 @@ const closeSidebar = () => {
   }
   .header-nav a {
     width: 100%;
-    padding-left: 1em;
+    padding: 0.8em 1em;
   }
-  .logo-li {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-right: unset;
+  .logo-li div {
+    display: none;
   }
   .selector-li {
     margin-left: 9em;
+  }
+  .logo-mobile {
+    display: flex;
+    gap: 1em;
+    background: var(--primary);
+    padding: 0.4em;
+    margin-top: -80px;
+    justify-content: center;
   }
 }
 </style>

@@ -28,7 +28,7 @@ const fontClass = computed(() => {
   --secondary: #c98686;
   --background: #fff4ec;
   --button: #381d2a;
-  --button-secondary: #9d5176;
+  --button-secondary: #9f2c64;
 }
 * {
   box-sizing: border-box;
