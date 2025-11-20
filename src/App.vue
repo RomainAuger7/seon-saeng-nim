@@ -24,11 +24,11 @@ const fontClass = computed(() => {
 
 <style>
 :root {
-  --primary: #ffb66d;
-  --secondary: #c98686;
+  --primary: #ffba08;
+  --secondary: #ff6600;
   --background: #fff4ec;
-  --button: #381d2a;
-  --button-secondary: #9f2c64;
+  --button: #141414;
+  --button-secondary: #cccbcd;
 }
 * {
   box-sizing: border-box;
@@ -50,8 +50,8 @@ body {
 .font-kr {
   font-family: 'Gowun Dodum', sans-serif;
 }
+
 .main {
   height: calc(100dvh - 96px);
-  padding: 1rem;
 }
 </style>
