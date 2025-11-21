@@ -41,7 +41,10 @@ const fontClass = computed(() => {
 body {
   background: var(--background);
 }
-
+img {
+  display: block;
+  max-inline-size: 100%;
+}
 .font-fr,
 .font-en {
   font-family: 'Nunito Sans', sans-serif;

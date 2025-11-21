@@ -5,7 +5,7 @@
     <div class="container-left">
       <Transition name="slide-right" appear>
         <div class="header-left">
-          <img src="/img/yejin.jpg" alt="flower" height="300" width="300" />
+          <img src="/img/yejin.jpg" alt="flower" height="250" width="250" />
           <h1>{{ $t('home.title') }}</h1>
           <span>{{ $t('home.subtitle') }}</span>
         </div>
@@ -25,9 +25,11 @@
         </div>
       </Transition>
     </div>
-    <div class="container-right">
-      <img src="/img/hangeul.png" alt="hangeul" height="500" width="500" />
-    </div>
+    <Transition name="fade" appear>
+      <div class="container-right">
+        <img src="/img/hangeul.png" alt="hangeul" height="450" width="450" />
+      </div>
+    </Transition>
   </div>
 </template>
 
@@ -56,8 +58,8 @@
   border-radius: 10%;
 }
 .header-left h1 {
-  padding-top: 2rem;
-  font-size: 4rem;
+  padding-top: 0.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 .header-left span {
@@ -120,5 +122,160 @@
 .fade-enter-to {
   transition: opacity 1s 1.2s ease-out;
   opacity: 1;
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container {
+    gap: 1.5rem;
+    padding: 7rem 3rem;
+  }
+  .header-left {
+    border-radius: 15px;
+  }
+  .header-left img {
+    height: 250px;
+    width: 250px;
+    padding: 1rem;
+  }
+  .header-left h1 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .header-left span {
+    font-size: 1.5rem;
+  }
+  .container-left p {
+    font-size: 1.3rem;
+  }
+  .buttons {
+    padding: 0 1.8rem;
+    gap: 1.8em;
+  }
+  .buttons button {
+    height: 3.2rem;
+    width: 7.8rem;
+    font-size: 1.5rem;
+  }
+  .container-right img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    gap: 3rem;
+    padding: 7rem 3.5rem;
+    flex-direction: column;
+  }
+  .header-left {
+    border-radius: 15px;
+  }
+  .header-left img {
+    height: 200px;
+    width: 200px;
+  }
+  .header-left h1 {
+    padding-top: 1.2rem;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .header-left span {
+    font-size: 1.7rem;
+  }
+  .container-left p {
+    font-size: 1.3rem;
+  }
+  .buttons {
+    padding: 0 1.7rem;
+    gap: 1.7em;
+  }
+  .buttons button {
+    height: 3.1rem;
+    width: 7.3rem;
+    font-size: 1.5rem;
+  }
+  .container-right img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .container {
+    gap: 3rem;
+    padding: 6rem 3.5rem;
+    flex-direction: column;
+  }
+  .header-left {
+    border-radius: 15px;
+  }
+  .header-left img {
+    height: 200px;
+    width: 200px;
+  }
+  .header-left h1 {
+    padding-top: 1.2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .header-left span {
+    font-size: 1.5rem;
+  }
+  .container-left p {
+    font-size: 1.2rem;
+  }
+  .buttons {
+    padding: 0 1.7rem;
+    gap: 1.7em;
+  }
+  .buttons button {
+    height: 3.1rem;
+    width: 7.3rem;
+    font-size: 1.5rem;
+  }
+  .container-right img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    gap: 3rem;
+    padding: 4rem 3rem;
+    flex-direction: column;
+  }
+  .header-left {
+    padding: 1em;
+    gap: 2rem;
+    border-radius: 15px;
+  }
+  .header-left img {
+    margin-left: 0.3rem;
+    height: 250px;
+    width: 250px;
+  }
+  .header-left h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+  .header-left span {
+    font-size: 1.4rem;
+  }
+  .container-left p {
+    font-size: 1.1rem;
+  }
+  .buttons {
+    justify-content: center;
+    padding: 0 1.5rem;
+    gap: 1.5em;
+  }
+  .buttons button {
+    height: 3rem;
+    width: 6.8rem;
+    font-size: 1.5rem;
+  }
+  .container-right img {
+    width: 200px;
+    height: 200px;
+  }
 }
 </style>

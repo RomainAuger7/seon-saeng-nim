@@ -137,7 +137,7 @@ const closeSidebar = () => {
   z-index: 9;
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 768px) {
   #open-sidebar-button,
   #close-sidebar-button {
     display: block;
@@ -169,9 +169,10 @@ const closeSidebar = () => {
   }
   .logo-mobile {
     display: flex;
+    height: 84px;
     gap: 1em;
     background: var(--primary);
-    padding: 0.4em;
+    padding-top: 1em;
     margin-top: -80px;
     justify-content: center;
   }
