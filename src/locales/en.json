@@ -1,12 +1,25 @@
 {
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
   "home": {
     "title": "Hong Yejin",
     "subtitle": "Specialized Korean teacher",
     "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam culpa delectus doloribus dolorum esse eum hic nemo nostrum, numquam quae quaerat quasi reiciendis reprehenderit rerum sunt tempora veritatis? Atque, quisquam!"
   },
-  "menu": {
-    "home": "Home",
-    "about": "About",
-    "contact": "Contact"
+  "contact": {
+    "title": "Book a class !",
+    "name": "Your name :",
+    "name_placeholder": "Name",
+    "email": "Email :",
+    "email_placeholder": "{account}{'@'}{domain}",
+    "message": "Your message :",
+    "level": "What's your korean level",
+    "unknown": "I don't know",
+    "validation": "Send !",
+    "success": "Message sent successfully!",
+    "error": "Something went wrong.. Try again"
   }
 }

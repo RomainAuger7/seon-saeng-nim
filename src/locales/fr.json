@@ -1,12 +1,25 @@
 {
+  "menu": {
+    "home": "Accueil",
+    "about": "A propos",
+    "contact": "Contact"
+  },
   "home": {
     "title": "Hong Yejin",
     "subtitle": "Professeur de coréen spécialisé",
     "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam culpa delectus doloribus dolorum esse eum hic nemo nostrum, numquam quae quaerat quasi reiciendis reprehenderit rerum sunt tempora veritatis? Atque, quisquam!"
   },
-  "menu": {
-    "home": "Accueil",
-    "about": "A propos",
-    "contact": "Contact"
+  "contact": {
+    "title": "Réserver un cours !",
+    "name": "Votre nom :",
+    "name_placeholder": "Nom",
+    "email": "Email :",
+    "email_placeholder": "{account}{'@'}{domain}",
+    "message": "Votre message :",
+    "level": "Quel est votre niveau de coréen",
+    "unknown": "Je ne sais pas",
+    "validation": "Envoyer !",
+    "success": "Votre message a bien été envoyer !",
+    "error": "Erreur.. Veuillez réessayer"
   }
 }

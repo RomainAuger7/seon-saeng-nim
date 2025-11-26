@@ -5,7 +5,9 @@ import { ref } from 'vue'
 
 <template>
   <div class="container">
-    <ContactForm />
+    <Transition name="fade" appear>
+      <ContactForm />
+    </Transition>
   </div>
 </template>
 
@@ -16,5 +18,13 @@ import { ref } from 'vue'
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.fade-enter-from {
+  opacity: 0;
+}
+
+.fade-enter-to {
+  transition: opacity 1s 0.5s;
+  opacity: 1;
 }
 </style>

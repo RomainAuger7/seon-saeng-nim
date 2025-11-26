@@ -1,12 +1,25 @@
 {
+  "menu": {
+    "home": "홈",
+    "about": "블로그",
+    "contact": "문의하기"
+  },
   "home": {
     "title": "홍예진",
     "subtitle": "전문 한국어 선생님",
     "content": "다만, 국가는 전통문화의 계승·발전과 민족문화의 창달에 노력하여야 한다, 누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다, 국회는 상호원조 또는 안전보장에 관한 조약!"
   },
-  "menu": {
-    "home": "홈",
-    "about": "블로그",
-    "contact": "문의하기"
+  "contact": {
+    "title": "수업을 예약하세요!",
+    "name": "이름 :",
+    "name_placeholder": "이름",
+    "email": "이메일 :",
+    "email_placeholder": "{account}{'@'}{domain}",
+    "message": "메시지 :",
+    "level": "한국어 수준은 어때요",
+    "unknown": "모르겠습니다",
+    "validation": "보내다 !",
+    "success": "메시지가 성공적으로 전송되었습니다!",
+    "error": "오류가 발생했습니다. 다시 시도하세요."
   }
 }
