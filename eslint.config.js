@@ -16,7 +16,6 @@ export default defineConfig([
       globals: {
         ...globals.browser,
       },
-      node: true,
     },
   },
 
