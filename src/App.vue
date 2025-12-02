@@ -57,4 +57,9 @@ img {
 .main {
   height: calc(100dvh - 96px);
 }
+@media screen and (max-width: 769px) {
+  body {
+    background: white;
+  }
+}
 </style>

@@ -148,9 +148,13 @@ const closeSidebar = () => {
     right: -100%;
     height: 100vh;
     width: min(15em, 100%);
+    background: var(--button);
     z-index: 10;
     border-left: 1px solid black;
     transition: right 0.3s ease-out;
+  }
+  .header-nav a {
+    color: var(--primary);
   }
   .header-nav ul {
     width: 100%;
