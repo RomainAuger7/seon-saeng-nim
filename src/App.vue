@@ -40,26 +40,18 @@ const fontClass = computed(() => {
 
 body {
   background: var(--background);
+  font-family: 'Gowun Dodum', sans-serif;
 }
 img {
   display: block;
   max-inline-size: 100%;
 }
-.font-fr,
-.font-en {
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-.font-kr {
-  font-family: 'Gowun Dodum', sans-serif;
-}
-
 .main {
   height: calc(100dvh - 96px);
 }
 @media screen and (max-width: 769px) {
   body {
-    background: white;
+    background: rgb(255, 244, 236);
   }
 }
 </style>

@@ -48,7 +48,7 @@ const closeSidebar = () => {
           {{ $t('menu.contact') }}
         </RouterLink>
       </li>
-      <li class="selector-li"><LanguageSelector /></li>
+      <li class="selector-li"><LanguageSelector @close="closeSidebar" /></li>
     </ul>
   </nav>
   <div id="overlay" v-show="isOpen" @click="toggleSidebar" aria-hidden="true"></div>

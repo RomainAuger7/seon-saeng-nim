@@ -1,13 +1,13 @@
 <script setup>
-  import { useI18n } from 'vue-i18n'
+import { useI18n } from 'vue-i18n'
+const { locale } = useI18n()
+const lang = locale
+const emits = defineEmits('close')
 
-  const { locale } = useI18n()
-  const lang = locale
-
-  function changeLang() {
-    locale.value = lang.value
-  }
-
+function changeLang() {
+  locale.value = lang.value
+  emits('close')
+}
 </script>
 
 <template>
@@ -21,13 +21,9 @@
 </template>
 
 <style scoped>
-
-.lang-selector select{
+.lang-selector select {
   padding: 8px;
   border-radius: 5px;
   cursor: pointer;
 }
 </style>
-
-
-

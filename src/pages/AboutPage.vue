@@ -55,7 +55,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
+  gap: 2rem;
 }
 .top-container {
   flex: 1;
@@ -66,14 +67,14 @@
   justify-content: center;
   align-items: center;
   padding: 0 4rem;
-  gap: 1rem;
+  gap: 2rem;
 }
 .top-header {
   display: flex;
   align-items: center;
   margin-top: 2rem;
   padding: 0;
-  gap: 1rem;
+  gap: 2rem;
 }
 .top-header img {
   border-radius: 50%;
@@ -99,13 +100,14 @@
   flex: 1;
   display: flex;
   align-items: center;
+  padding: 2rem 0;
   justify-content: center;
 }
 .skill-card,
 .xp-card {
   border-radius: 15px;
   width: 90%;
-  height: 75%;
+  height: 100%;
   padding: 0 2rem;
   border: 1px solid black;
   border-radius: 12px;
