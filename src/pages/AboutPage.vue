@@ -150,13 +150,20 @@
   transition: opacity 1s ease-out;
   opacity: 1;
 }
-.slide-up-enter-from {
-  transform: translateY(600px);
+.slide-up-enter-active {
+  animation: scaling 1.5s ease-out 0s 1 normal none;
 }
 
-.slide-up-enter-to {
-  transition: all 1s ease-out;
-  transform: translateY(0);
+@keyframes scaling {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 @media screen and (max-width: 1000px) {
   .container {

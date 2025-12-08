@@ -5,19 +5,23 @@ import ContactForm from '@/components/ContactForm.vue'
 <template>
   <div class="container">
     <div class="left-container">
-      <div class="content-container">
-        <h1>Book an online class now !</h1>
-        <p>
-          If you want to contact me for a class or ant question you can fill the form. First class
-          is free, as we will discuss my teaching methods and how i work. Feel free to say hi !
-        </p>
-      </div>
-      <div class="img-container">
-        <img src="/img/yejin_draw.png" alt="yejin_draw" />
-      </div>
+      <Transition name="fade-in" appear>
+        <div class="content-container">
+          <h1>Book an online class now !</h1>
+          <p>
+            If you want to contact me for a class or ant question you can fill the form. First class
+            is free, as we will discuss my teaching methods and how i work. Feel free to say hi !
+          </p>
+        </div>
+      </Transition>
+      <Transition name="bounce" appear>
+        <div class="img-container">
+          <img src="/img/yejin_draw.png" alt="yejin_draw" />
+        </div>
+      </Transition>
     </div>
     <div class="right-container">
-      <Transition name="fade" appear>
+      <Transition name="fade-in" appear>
         <ContactForm />
       </Transition>
     </div>
@@ -61,13 +65,45 @@ import ContactForm from '@/components/ContactForm.vue'
   font-size: 1.5rem;
   padding: 0 2rem;
 }
-.fade-enter-from {
-  opacity: 0;
+.fade-in-enter-active,
+.fade-enter-active {
+  animation: fade-in 1s ease-out 0s 1 normal none;
 }
+.bounce-enter-active {
+  animation: bounce 1.5s ease-out 0s 1 normal none;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
 
-.fade-enter-to {
-  transition: opacity 1s 0.5s;
-  opacity: 1;
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(250px);
+  }
+
+  70% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  85% {
+    animation-timing-function: ease-in;
+    transform: translateY(32px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
 }
 @media screen and (max-width: 1160px) {
   .container {
