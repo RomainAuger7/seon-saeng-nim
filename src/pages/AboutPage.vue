@@ -151,18 +151,16 @@
   opacity: 1;
 }
 .slide-up-enter-active {
-  animation: scaling 1.5s ease-out 0s 1 normal none;
+  animation: scaling 1s ease-out 0s 1 normal none;
 }
 
 @keyframes scaling {
   0% {
-    opacity: 0;
-    transform: scale(0);
+    transform: translateY(400px);
   }
 
   100% {
-    opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 @media screen and (max-width: 1000px) {

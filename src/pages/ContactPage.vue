@@ -87,22 +87,26 @@ import ContactForm from '@/components/ContactForm.vue'
   0% {
     animation-timing-function: ease-in;
     opacity: 0;
-    transform: translateY(250px);
+    transform: translateX(-250px);
+    z-index: -10;
   }
 
   70% {
     animation-timing-function: ease-out;
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
+    z-index: -10;
   }
 
   85% {
     animation-timing-function: ease-in;
-    transform: translateY(32px);
+    transform: translateX(-32px);
+    z-index: -10;
   }
   100% {
     animation-timing-function: ease-out;
-    transform: translateY(0);
+    transform: translateX(0);
+    z-index: -10;
   }
 }
 @media screen and (max-width: 1160px) {
