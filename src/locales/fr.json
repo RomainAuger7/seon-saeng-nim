@@ -6,8 +6,18 @@
   },
   "home": {
     "title": "Hong Yejin",
-    "subtitle": "Professeur de coréen spécialisé",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam culpa delectus doloribus dolorum esse eum hic nemo nostrum, numquam quae quaerat quasi reiciendis reprehenderit rerum sunt tempora veritatis? Atque, quisquam!"
+    "subtitle": "Professeur de coréen certifié",
+    "content": "Bonjour ! Après avoir étudié la littérature française (Master) et l'enseignement du coréen (Master) à Séoul, je vis actuellement en France et j'enseigne le coréen à des étrangers, en ligne et en présentiel. Si vous cherchez une professeure comme amie pour vous aider à apprendre le coréen, n'hésitez pas à vous inscrire à mon cours !"
+  },
+  "about": {
+    "intro": "Grâce à mes 3 ans d'expérience, j'enseigne la langue et la culture coréennes aux Français dans une école coréenne en France (Cours en groupe, présentiel et en visio) et j'enseignais la langue et la culture coréennes aux étrangers dans plusieurs académies qui se trouvent à Séoul (Cours en groupe et individuel, présentiel et en visio)",
+    "diploma": "Diplômes",
+    "diploma1": "Certificat de Professeur de coréen (10/2022)",
+    "diploma2": "Master de l'Enseignement de la langue coréenne comme langue étrangère (08/2024)",
+    "languages": "Langues",
+    "language1": "Coréen (Natif)",
+    "language2": "Français (B2)",
+    "language3": "Anglais (B1)"
   },
   "contact": {
     "title": "Réserver un cours !",
@@ -16,10 +26,15 @@
     "email": "Email :",
     "email_placeholder": "{account}{'@'}{domain}",
     "message": "Votre message :",
-    "level": "Quel est votre niveau de coréen",
-    "unknown": "Je ne sais pas",
     "validation": "Envoyer !",
     "success": "Votre message a bien été envoyer !",
-    "error": "Erreur.. Veuillez réessayer"
+    "error": "Erreur.. Veuillez réessayer",
+    "info1": "Tous niveaux disponibles, du débutant à avancé.",
+    "info2": "Tous types de cours disponibles : préparation du Topik I/II, discuter en coréen, apprendre la grammaire, lire et écrire, etc.",
+    "info3": "Une réunion préparatoire de 20 à 30 minutes aura lieu avant l'inscription au cours (gratuit).",
+    "info4": "Normalement, le cours dura 1h. Mais vous pouvez demander la durée du cours que vous voulez(30 min, 1h 30, etc.) et le tarif changera selon la durée.",
+    "info5": "Le cours aura lieu sur Zoom. Je vais vous envoyer le lien par e-mail ou SMS.",
+    "info6": "Le manuel n'est pas obligatoire. Vous pouvez voir sur l'écran le contenu du cours.",
+    "info7": "Pendant les cours, parler toujours en coréen est recommandé, mais vous pouvez parler en français ou en anglais si c'est nécessaire."
   }
 }

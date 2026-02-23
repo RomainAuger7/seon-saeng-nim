@@ -8,16 +8,8 @@
           <img src="/img/yejin_alt.jpg" alt="yejin" width="150" height="150" />
           <h1>Hong Yejin, professeur de coréen</h1>
         </div>
-        <span>Master de l'université des langues étrangères de Seoul</span>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab esse et excepturi expedita
-          explicabo facere laudantium magni neque perferendis ullam? Dolor earum, eum fuga magni
-          neque quibusdam? Maxime praesentium, tempora.Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Ab esse et excepturi expedita explicabo facere laudantium magni neque
-          perferendis ullam? Dolor earum, eum fuga magni neque quibusdam? Maxime praesentium,
-          tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab esse et excepturi
-          expedita explicabo facere laudantium magni neque perferendis ullam? Dolor earum, eum fuga
-          magni neque quibusdam? Maxime praesentium, tempora.
+          {{ $t('about.intro') }}
         </p>
       </div>
     </Transition>
@@ -26,12 +18,10 @@
       <div class="skill-container">
         <Transition name="slide-up" appear>
           <div class="skill-card">
-            <h1>Compétences</h1>
+            <h1>{{ $t('about.diploma') }}</h1>
             <ul>
-              <li>Jolie</li>
-              <li>Mignonne</li>
-              <li>Sexy</li>
-              <li>Idiote</li>
+              <li>{{ $t('about.diploma1') }}</li>
+              <li>{{ $t('about.diploma2') }}</li>
             </ul>
           </div>
         </Transition>
@@ -39,10 +29,11 @@
       <div class="xp-container">
         <Transition name="slide-up" appear>
           <div class="xp-card">
-            <h1>Expériences</h1>
+            <h1>{{ $t('about.languages') }}</h1>
             <ul>
-              <li>(2022 - 2025) My korean studio</li>
-              <li>(2025 - 2026) Ecole de coréen de Clermont-Ferrand</li>
+              <li>{{ $t('about.language1') }}</li>
+              <li>{{ $t('about.language2') }}</li>
+              <li>{{ $t('about.language3') }}</li>
             </ul>
           </div>
         </Transition>
@@ -127,7 +118,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  list-style-type: korean-hanja-informal;
+  list-style-type: korean-hangul-formal;
   padding: 0.5rem;
 }
 

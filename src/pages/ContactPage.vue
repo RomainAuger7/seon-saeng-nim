@@ -4,26 +4,20 @@ import ContactForm from '@/components/ContactForm.vue'
 
 <template>
   <div class="container">
-    <div class="left-container">
-      <Transition name="fade-in" appear>
-        <div class="content-container">
-          <h1>Book an online class now !</h1>
-          <p>
-            If you want to contact me for a class or ant question you can fill the form. First class
-            is free, as we will discuss my teaching methods and how i work. Feel free to say hi !
-          </p>
-        </div>
-      </Transition>
-      <Transition name="bounce" appear>
-        <div class="img-container">
-          <img src="/img/yejin_draw.png" alt="yejin_draw" />
-        </div>
-      </Transition>
-    </div>
-    <div class="right-container">
-      <Transition name="fade-in" appear>
-        <ContactForm />
-      </Transition>
+    <h1>Book an online class now !</h1>
+    <Transition name="fade-in" appear>
+      <ContactForm />
+    </Transition>
+    <div class="info">
+      <ul>
+        <li>{{ $t('contact.info1') }}</li>
+        <li>{{ $t('contact.info2') }}</li>
+        <li>{{ $t('contact.info3') }}</li>
+        <li>{{ $t('contact.info4') }}</li>
+        <li>{{ $t('contact.info5') }}</li>
+        <li>{{ $t('contact.info6') }}</li>
+        <li>{{ $t('contact.info7') }}</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -31,39 +25,27 @@ import ContactForm from '@/components/ContactForm.vue'
 <style scoped>
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
   height: auto;
+  gap: 2rem;
 }
-.left-container,
-.right-container {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.content-container {
-  padding-top: 2rem;
-}
-.img-container,
-.content-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.form-container {
+  margin-top: 3rem;
 }
 .img-container img {
   z-index: -3;
 }
-.content-container h1 {
+.container h1 {
   font-size: 2rem;
 }
-.content-container p {
+.info {
+  padding: 1rem 2.5rem;
+}
+.info li {
   font-size: 1.5rem;
-  padding: 0 2rem;
 }
 .fade-in-enter-active,
 .fade-enter-active {
@@ -114,32 +96,10 @@ import ContactForm from '@/components/ContactForm.vue'
     height: auto;
     flex-direction: column;
   }
-  .left-container {
-    height: 25dvh;
-    padding: 2rem 10rem;
-  }
-  .right-container {
-    display: flex;
-    flex-direction: column;
-    height: 75dvh;
-    padding: 2rem 0;
-  }
-  .img-container {
-    flex: 0;
-    position: absolute;
-    top: 90px;
-    left: 0;
-    align-items: center;
-  }
-  .content-container {
-    text-align: center;
-    margin-left: 5rem;
-    padding-top: 0;
-  }
-  .content-container h1 {
+  .container h1 {
     font-size: 1.8rem;
   }
-  .content-container p {
+  .info li {
     font-size: 1.3rem;
   }
   .img-container img {
@@ -148,21 +108,15 @@ import ContactForm from '@/components/ContactForm.vue'
   }
 }
 @media screen and (max-width: 769px) {
-  .img-container {
-    display: none;
-  }
-  .left-container {
-    padding: 2rem;
-  }
-  .content-container {
+  .container {
     width: 100%;
     margin: 0;
   }
   @media screen and (max-width: 450px) {
-    .content-container h1 {
+    .container h1 {
       font-size: 1.6rem;
     }
-    .content-container p {
+    .info li {
       font-size: 1.2rem;
     }
   }

@@ -87,7 +87,7 @@ const handleSubmit = () => {
   flex-direction: column;
   align-items: flex-start;
   padding: 30px 50px;
-  width: 33vw;
+  width: 40vw;
   height: auto;
   gap: 1rem;
   background-color: white;
@@ -191,6 +191,16 @@ const handleSubmit = () => {
 .slide-fade-leave-to {
   opacity: 0;
   transform: translateX(200px);
+}
+@media screen and (max-width: 1800px) {
+  .form-container {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .form-container {
+    width: 60vw;
+  }
 }
 @media screen and (max-width: 1160px) {
   .form-container {

@@ -18,7 +18,6 @@
           <RouterLink :to="{ name: 'AboutPage' }">
             <button>{{ $t('menu.about') }}</button>
           </RouterLink>
-
           <RouterLink :to="{ name: 'ContactPage' }">
             <button>{{ $t('menu.contact') }}</button>
           </RouterLink>
