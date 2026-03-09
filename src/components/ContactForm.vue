@@ -143,6 +143,7 @@ const handleSubmit = () => {
   background: #f9e450;
 }
 .form-button:hover {
+  cursor: pointer;
   background: #ffbb38;
 }
 

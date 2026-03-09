@@ -2,7 +2,6 @@
 import Header from './components/Header.vue'
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
-
 const { locale } = useI18n()
 const fontClass = computed(() => {
   return {
