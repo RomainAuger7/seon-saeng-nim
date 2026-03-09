@@ -1,4 +1,4 @@
-import Homepage from './pages/Homepage.vue'
+import Homepage from './pages/HomePage.vue'
 import AboutPage from './pages/AboutPage.vue'
 import ContactPage from './pages/ContactPage.vue'
 import NotFoundPage from './pages/NotFoundPage.vue'
