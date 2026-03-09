@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import { routes } from '@/routes.js'
+import { routes } from './routes.js'
 import { createI18n } from 'vue-i18n'
 
 const router = createRouter({

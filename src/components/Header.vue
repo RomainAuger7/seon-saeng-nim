@@ -1,5 +1,5 @@
 <script setup>
-import LanguageSelector from '@/components/LanguageSelector.vue'
+import LanguageSelector from './LanguageSelector.vue'
 import { ref } from 'vue'
 
 const isOpen = ref(false)
