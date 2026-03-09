@@ -6,20 +6,36 @@
   },
   "home": {
     "title": "Hong Yejin",
-    "subtitle": "Specialized Korean teacher",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam culpa delectus doloribus dolorum esse eum hic nemo nostrum, numquam quae quaerat quasi reiciendis reprehenderit rerum sunt tempora veritatis? Atque, quisquam!"
+    "subtitle": "Certified Korean Teacher",
+    "content": "Hello! After studying French literature (Master's) and Korean language teaching (Master's) in Seoul, I currently live in France and teach Korean to foreigners, both online and in person. If you're looking for a friendly teacher to help you learn Korean, feel free to sign up for my course!"
+  },
+  "about": {
+    "title": "Hong Yejin, Korean teacher",
+    "intro": "Thanks to my 3 years of experience, I teach Korean language and culture to French people in a Korean school in France (group classes, face-to-face and video conferencing) and I taught Korean language and culture to foreigners in several academies located in Seoul (group and individual classes, face-to-face and video conferencing)",
+    "diploma": "Degrees",
+    "diploma1": "Certificate of Korean Language Teaching (10/2022)",
+    "diploma2": "Master's degree in Teaching Korean as a Foreign Language (08/2024)",
+    "languages": "Languages",
+    "language1": "Korean (Native)",
+    "language2": "French (B2)",
+    "language3": "English (B1)"
   },
   "contact": {
-    "title": "Book a class !",
-    "name": "Your name :",
+    "title": "Book a class!",
+    "name": "Your name:",
     "name_placeholder": "Name",
     "email": "Email :",
     "email_placeholder": "{account}{'@'}{domain}",
-    "message": "Your message :",
-    "level": "What's your korean level",
-    "unknown": "I don't know",
+    "message": "Your message:",
     "validation": "Send !",
-    "success": "Message sent successfully!",
-    "error": "Something went wrong.. Try again"
+    "success": "Your message has been successfully sent!",
+    "error": "Error. Please try again.",
+    "info1": "All levels available, from beginner to advanced.",
+    "info2": "All types of courses available: Topik I/II preparation, Korean conversation, grammar learning, reading and writing, etc.",
+    "info3": "A 20-30 minute preparatory meeting will take place before registration for the course (free). ",
+    "info4": "Normally, the lesson lasts 1 hour. But you can request the duration of the lesson you want (30 min, 1h 30, etc.) and the price will change according to the duration.",
+    "info5": "The class will take place on Zoom. I will send you the link by email or SMS.",
+    "info6": "The manual is not mandatory. You can view the course content on the screen.",
+    "info7": "During classes, speaking in Korean is recommended, but you can speak in French or English if necessary."
   }
 }

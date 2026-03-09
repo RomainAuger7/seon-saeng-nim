@@ -6,7 +6,7 @@
       <div class="top-container">
         <div class="top-header">
           <img src="/img/yejin_alt.jpg" alt="yejin" width="150" height="150" />
-          <h1>Hong Yejin, professeur de coréen</h1>
+          <h1>{{ $t('about.title') }}</h1>
         </div>
         <p>
           {{ $t('about.intro') }}

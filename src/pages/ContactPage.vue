@@ -4,7 +4,7 @@ import ContactForm from '@/components/ContactForm.vue'
 
 <template>
   <div class="container">
-    <h1>Book an online class now !</h1>
+    <h1>{{ $t('contact.title') }}</h1>
     <Transition name="fade-in" appear>
       <ContactForm />
     </Transition>
