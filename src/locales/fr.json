@@ -6,8 +6,8 @@
   },
   "home": {
     "title": "Hong Yejin",
-    "subtitle": "Professeur de coréen certifié",
-    "content": "Bonjour ! Après avoir étudié la littérature française (Master) et l'enseignement du coréen (Master) à Séoul, je vis actuellement en France et j'enseigne le coréen à des étrangers, en ligne et en présentiel. Si vous cherchez une professeure comme amie pour vous aider à apprendre le coréen, n'hésitez pas à vous inscrire à mon cours !"
+    "subtitle": "Professeur de coréen",
+    "content": "Bonjour ! Je m'appelle Hong Ye-jin et j'enseigne le coréen à des étudiants internationaux, en ligne et en présentiel en France. Vous cherchez quelqu'un pour vous aider à apprendre le coréen ? Alors n'hésitez pas à vous inscrire à mon cours !"
   },
   "about": {
     "title": "Hong Yejin, professeur de coréen",
@@ -21,13 +21,19 @@
     "language3": "Anglais (B1)"
   },
   "contact": {
-    "title": "Réserver un cours !",
+    "title": "Demandez une consultation !",
+    "content": "Avant toute inscription à un cours, une consultation gratuite de 10 à 20 minutes est organisée. Suite à cette consultation, nous déterminerons votre inscription, ainsi que le type, la date, l'heure et le nombre de cours.",
     "name": "Votre nom :",
     "name_placeholder": "Nom",
+    "age": "Age :",
+    "age_placeholder": "Age",
+    "country": "Pays de résidence :",
+    "country_placeholder": "Ex : France",
     "email": "Email :",
     "email_placeholder": "{account}{'@'}{domain}",
     "message": "Votre message :",
-    "validation": "Envoyer !",
+    "message_placeholder": "Veuillez indiquer les raisons pour lesquelles vous souhaitez étudier le coréen, votre niveau actuel, l'horaire des cours que vous souhaitez suivre, ainsi que toutes les questions que vous aimeriez poser.",
+    "validation": "Envoyer",
     "success": "Votre message a bien été envoyer !",
     "error": "Erreur.. Veuillez réessayer",
     "info1": "Tous niveaux disponibles, du débutant à avancé.",

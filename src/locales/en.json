@@ -6,8 +6,8 @@
   },
   "home": {
     "title": "Hong Yejin",
-    "subtitle": "Certified Korean Teacher",
-    "content": "Hello! After studying French literature (Master's) and Korean language teaching (Master's) in Seoul, I currently live in France and teach Korean to foreigners, both online and in person. If you're looking for a friendly teacher to help you learn Korean, feel free to sign up for my course!"
+    "subtitle": "Korean Teacher",
+    "content": "Hello! My name is Hong Ye-jin, and I teach Korean to international students, both online and in person in France. Are you looking for someone to help you learn Korean? Then feel free to sign up for my course!"
   },
   "about": {
     "title": "Hong Yejin, Korean teacher",
@@ -21,13 +21,19 @@
     "language3": "English (B1)"
   },
   "contact": {
-    "title": "Book a class!",
+    "title": "Request a consultation !",
+    "content": "Before registering for a course, a free 10-20 minute consultation is offered. Following this consultation, we will determine your registration, as well as the type, date, time, and number of classes.",
     "name": "Your name:",
     "name_placeholder": "Name",
+    "age": "Age :",
+    "age_placeholder": "Age",
+    "country": "Country of Residence :",
+    "country_placeholder": "Ex : France",
     "email": "Email :",
     "email_placeholder": "{account}{'@'}{domain}",
     "message": "Your message:",
-    "validation": "Send !",
+    "message_placeholder": "Please state your reasons for wanting to study Korean, your current level, the class schedule you would like to attend, and any questions you would like to ask.",
+    "validation": "Send",
     "success": "Your message has been successfully sent!",
     "error": "Error. Please try again.",
     "info1": "All levels available, from beginner to advanced.",

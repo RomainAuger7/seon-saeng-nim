@@ -4,6 +4,8 @@ import emailjs from '@emailjs/browser'
 
 const form = ref({
   name: '',
+  age: '',
+  country: '',
   email: '',
   message: '',
 })
@@ -14,6 +16,8 @@ const error = ref(false)
 const handleSubmit = () => {
   const formData = {
     name: form.value.name,
+    age: form.value.age,
+    country: form.value.country,
     email: form.value.email,
     message: form.value.message,
   }
@@ -30,6 +34,8 @@ const handleSubmit = () => {
         setTimeout(() => {
           success.value = true
           form.value.name = ''
+          form.value.age = ''
+          form.value.country = ''
           form.value.email = ''
           form.value.message = ''
         }, 500)
@@ -47,12 +53,35 @@ const handleSubmit = () => {
 <template>
   <form @submit.prevent="handleSubmit">
     <div class="form-container">
-      <label for="name">{{ $t('contact.name') }}</label>
+      <div class="form-row">
+        <div class="form-input">
+          <label for="name">{{ $t('contact.name') }}</label>
+          <input
+            type="text"
+            name="name"
+            :placeholder="$t('contact.name_placeholder')"
+            v-model="form.name"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label for="age">{{ $t('contact.age') }}</label>
+          <input
+            type="text"
+            name="age"
+            :placeholder="$t('contact.age_placeholder')"
+            v-model="form.age"
+            required
+          />
+        </div>
+      </div>
+
+      <label for="country">{{ $t('contact.country') }}</label>
       <input
         type="text"
-        name="name"
-        :placeholder="$t('contact.name_placeholder')"
-        v-model="form.name"
+        name="country"
+        :placeholder="$t('contact.country_placeholder')"
+        v-model="form.country"
         required
       />
       <label for="email">{{ $t('contact.email') }}</label>
@@ -66,8 +95,14 @@ const handleSubmit = () => {
         required
       />
       <label for="message">{{ $t('contact.message') }}</label>
-      <textarea name="message" rows="6" style="resize: none" v-model="form.message" required />
-
+      <textarea
+        name="message"
+        :placeholder="$t('contact.message_placeholder')"
+        rows="6"
+        style="resize: none"
+        v-model="form.message"
+        required
+      />
       <button type="submit" class="form-button">{{ $t('contact.validation') }}</button>
       <Transition name="slide-fade">
         <div @click="success = false" v-if="success" class="form-success">
@@ -135,6 +170,16 @@ const handleSubmit = () => {
   line-height: 0.8;
 }
 
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.form-row input {
+  height: 65%;
+}
+
 .form-button {
   margin: auto;
   border-radius: 15px;
@@ -144,6 +189,7 @@ const handleSubmit = () => {
 }
 .form-button:hover {
   background: #ffbb38;
+  cursor: pointer;
 }
 
 .form-radio div {
@@ -205,7 +251,7 @@ const handleSubmit = () => {
 @media screen and (max-width: 1160px) {
   .form-container {
     width: 80vw;
-    height: 50dvh;
+    height: 60dvh;
   }
 }
 @media screen and (max-width: 450px) {

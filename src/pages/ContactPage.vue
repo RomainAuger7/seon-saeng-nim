@@ -5,6 +5,7 @@ import ContactForm from '../components/ContactForm.vue'
 <template>
   <div class="container">
     <h1>{{ $t('contact.title') }}</h1>
+    <p>{{ $t('contact.content') }}</p>
     <Transition name="fade-in" appear>
       <ContactForm />
     </Transition>
@@ -40,6 +41,10 @@ import ContactForm from '../components/ContactForm.vue'
 }
 .container h1 {
   font-size: 2rem;
+}
+.container p {
+  font-size: 1.5rem;
+  padding: 0 1rem;
 }
 .info {
   padding: 1rem 2.5rem;
@@ -99,6 +104,9 @@ import ContactForm from '../components/ContactForm.vue'
   .container h1 {
     font-size: 1.8rem;
   }
+  .container p {
+    font-size: 1.4rem;
+  }
   .info li {
     font-size: 1.3rem;
   }
@@ -110,11 +118,14 @@ import ContactForm from '../components/ContactForm.vue'
 @media screen and (max-width: 769px) {
   .container {
     width: 100%;
-    margin: 0;
+    margin-top: 1rem;
   }
   @media screen and (max-width: 450px) {
     .container h1 {
       font-size: 1.6rem;
+    }
+    .container p {
+      font-size: 1.2rem;
     }
     .info li {
       font-size: 1.2rem;
