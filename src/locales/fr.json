@@ -11,7 +11,10 @@
   },
   "about": {
     "title": "Hong Yejin, professeur de coréen",
-    "intro": "Grâce à mes 3 ans d'expérience, j'enseigne la langue et la culture coréennes aux Français dans une école coréenne en France (Cours en groupe, présentiel et en visio) et j'enseignais la langue et la culture coréennes aux étrangers dans plusieurs académies qui se trouvent à Séoul (Cours en groupe et individuel, présentiel et en visio)",
+    "xp": "Expérience professionnelle",
+    "xp1": "Plus de 3 ans d'expérience (décembre 2022~)",
+    "xp2": "J'ai enseigné la langue et la culture coréennes aux étrangers dans plusieurs académies de Séoul (Cours en groupe et individuel, présentiel et en visio)",
+    "xp3": "Cours de langue et de culture coréennes dans une école de langue coréenne en France (cours collectifs en ligne/en présentiel)",
     "diploma": "Diplômes",
     "diploma1": "Certificat de Professeur de coréen (10/2022)",
     "diploma2": "Master de l'Enseignement de la langue coréenne comme langue étrangère (08/2024)",

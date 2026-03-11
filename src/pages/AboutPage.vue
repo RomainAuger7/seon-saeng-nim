@@ -5,35 +5,60 @@
     <Transition name="fade" appear>
       <div class="top-container">
         <div class="top-header">
-          <img src="/img/yejin_alt.jpg" alt="yejin" width="150" height="150" />
-          <h1>{{ $t('about.title') }}</h1>
+          <img src="/img/yejin_alt.jpg" alt="yejin" width="250" height="250" />
         </div>
-        <p>
-          {{ $t('about.intro') }}
-        </p>
       </div>
     </Transition>
-
     <div class="bottom-container">
-      <div class="skill-container">
-        <Transition name="slide-up" appear>
-          <div class="skill-card">
-            <h1>{{ $t('about.diploma') }}</h1>
+      <div class="content-container">
+        <Transition name="fade" appear>
+          <div class="card">
             <ul>
-              <li>{{ $t('about.diploma1') }}</li>
-              <li>{{ $t('about.diploma2') }}</li>
+              <li>
+                <h1>{{ $t('about.xp') }}</h1>
+                <div class="card-content">
+                  <ul>
+                    <li>{{ $t('about.xp1') }}</li>
+                    <li>{{ $t('about.xp2') }}</li>
+                    <li>{{ $t('about.xp3') }}</li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
         </Transition>
       </div>
-      <div class="xp-container">
-        <Transition name="slide-up" appear>
-          <div class="xp-card">
-            <h1>{{ $t('about.languages') }}</h1>
+      <div class="content-container">
+        <Transition name="fade" appear>
+          <div class="card">
             <ul>
-              <li>{{ $t('about.language1') }}</li>
-              <li>{{ $t('about.language2') }}</li>
-              <li>{{ $t('about.language3') }}</li>
+              <li>
+                <h1>{{ $t('about.diploma') }}</h1>
+                <div class="card-content">
+                  <ul>
+                    <li>{{ $t('about.diploma1') }}</li>
+                    <li>{{ $t('about.diploma2') }}</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </Transition>
+      </div>
+      <div class="content-container">
+        <Transition name="fade" appear>
+          <div class="card">
+            <ul>
+              <li>
+                <h1>{{ $t('about.languages') }}</h1>
+                <div class="card-content">
+                  <ul>
+                    <li>{{ $t('about.language1') }}</li>
+                    <li>{{ $t('about.language2') }}</li>
+                    <li>{{ $t('about.language3') }}</li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
         </Transition>
@@ -84,65 +109,56 @@
 }
 .bottom-container {
   flex: 1;
+  background: #f9e450;
   display: flex;
 }
-.skill-container,
-.xp-container {
+.content-container {
   flex: 1;
   display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  padding: 1rem;
   justify-content: center;
 }
-.skill-card,
-.xp-card {
+.card {
   border-radius: 15px;
   width: 90%;
   height: 100%;
   padding: 0 2rem;
-  border: 1px solid black;
-  border-radius: 12px;
 }
-.skill-card {
-  background: var(--button);
-  color: var(--primary);
-  box-shadow: 8px 8px 0 var(--primary);
-}
-.xp-card {
-  box-shadow: 8px 8px 0 var(--secondary);
-  color: var(--secondary);
-  background: var(--button);
-}
-.skill-card ul,
-.xp-card ul {
+.card ul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  list-style-type: korean-hangul-formal;
   padding: 0.5rem;
 }
-
-.skill-card h1,
-.xp-card h1 {
+.card h1 {
   font-size: 1.8rem;
-  text-align: center;
   padding-bottom: 1rem;
 }
-.skill-card li,
-.xp-card li {
+.card li {
   font-size: 1.2rem;
 }
-
+.card-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card-content ul li {
+  padding: 12px 0;
+  color: #222;
+  letter-spacing: 0.01em;
+}
+.card-content ul li::before {
+  content: '-';
+  font-size: 1.8rem;
+  margin-right: 12px;
+  color: #000000;
+}
 .fade-enter-from {
   opacity: 0;
 }
-
 .fade-enter-to {
   transition: opacity 1s ease-out;
   opacity: 1;
-}
-.slide-up-enter-active {
-  animation: scaling 1s ease-out 0s 1 normal none;
 }
 
 @keyframes scaling {
@@ -172,23 +188,19 @@
   }
   .bottom-container {
     flex-direction: column;
-    gap: 2rem;
     padding: 2rem 0.5rem;
   }
-  .skill-card,
-  .xp-card {
+  .card {
     height: auto;
     min-height: 180px;
     width: 75%;
     padding: 0 2rem;
   }
-  .skill-card h1,
-  .xp-card h1 {
+  .card h1 {
     font-size: 1.6rem;
     padding-bottom: 0.5rem;
   }
-  .skill-card li,
-  .xp-card li {
+  .card li {
     font-size: 1.1rem;
   }
 }

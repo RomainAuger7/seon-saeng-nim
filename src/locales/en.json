@@ -11,7 +11,10 @@
   },
   "about": {
     "title": "Hong Yejin, Korean teacher",
-    "intro": "Thanks to my 3 years of experience, I teach Korean language and culture to French people in a Korean school in France (group classes, face-to-face and video conferencing) and I taught Korean language and culture to foreigners in several academies located in Seoul (group and individual classes, face-to-face and video conferencing)",
+    "xp": "Professional Experience",
+    "xp1": "More than 3 years of experience (December 2022~)",
+    "xp2": "I have taught Korean language and culture to foreigners in several academies in Seoul (group and individual classes, in person and online).",
+    "xp3": "Korean language and culture courses at a Korean language school in France (online/in-person group classes)",
     "diploma": "Degrees",
     "diploma1": "Certificate of Korean Language Teaching (10/2022)",
     "diploma2": "Master's degree in Teaching Korean as a Foreign Language (08/2024)",
