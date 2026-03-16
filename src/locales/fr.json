@@ -26,7 +26,7 @@
   "contact": {
     "title": "Demandez une consultation !",
     "content": "Avant toute inscription à un cours, une consultation gratuite de 10 à 20 minutes est organisée. Suite à cette consultation, nous déterminerons votre inscription, ainsi que le type, la date, l'heure et le nombre de cours.",
-    "name": "Votre nom :",
+    "name": "Nom :",
     "name_placeholder": "Nom",
     "age": "Age :",
     "age_placeholder": "Age",
@@ -34,7 +34,7 @@
     "country_placeholder": "Ex : France",
     "email": "Email :",
     "email_placeholder": "{account}{'@'}{domain}",
-    "message": "Votre message :",
+    "message": "Message :",
     "message_placeholder": "Veuillez indiquer les raisons pour lesquelles vous souhaitez étudier le coréen, votre niveau actuel, l'horaire des cours que vous souhaitez suivre, ainsi que toutes les questions que vous aimeriez poser.",
     "validation": "Envoyer",
     "success": "Votre message a bien été envoyer !",

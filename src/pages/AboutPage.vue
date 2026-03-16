@@ -194,7 +194,7 @@
     height: auto;
     min-height: 180px;
     width: 75%;
-    padding: 0 2rem;
+    padding: 0;
   }
   .card h1 {
     font-size: 1.6rem;

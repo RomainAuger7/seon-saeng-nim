@@ -75,11 +75,12 @@
   gap: 2em;
 }
 .buttons button {
-  height: 3.8rem;
-  width: 9rem;
+  height: 3rem;
+  width: auto;
   font-size: 1.6rem;
   border: none;
   border-radius: 15px;
+  padding: 0 1rem;
   background: var(--button);
   opacity: 1;
   cursor: pointer;
@@ -151,8 +152,7 @@
     gap: 1.8em;
   }
   .buttons button {
-    height: 3.2rem;
-    width: 7.8rem;
+    height: 2.8rem;
     font-size: 1.5rem;
   }
   .container-right img {
@@ -189,8 +189,7 @@
     gap: 1.7em;
   }
   .buttons button {
-    height: 3.1rem;
-    width: 7.3rem;
+    height: 2.5rem;
     font-size: 1.5rem;
   }
   .container-right img {
@@ -227,8 +226,7 @@
     gap: 1.7em;
   }
   .buttons button {
-    height: 3.1rem;
-    width: 7.3rem;
+    height: 2.3rem;
     font-size: 1.5rem;
   }
   .container-right img {
@@ -268,8 +266,9 @@
     gap: 1.5em;
   }
   .buttons button {
-    height: 3rem;
-    width: 6.8rem;
+    height: 2.1rem;
+    width: 7.5rem;
+    width: 8rem;
     font-size: 1.5rem;
   }
   .container-right img {

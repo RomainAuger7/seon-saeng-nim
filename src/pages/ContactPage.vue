@@ -102,23 +102,28 @@ import ContactForm from '../components/ContactForm.vue'
     flex-direction: column;
   }
   .container h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .container p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .info li {
     font-size: 1.3rem;
-  }
-  .img-container img {
-    height: 240px;
-    width: 240px;
   }
 }
 @media screen and (max-width: 769px) {
   .container {
     width: 100%;
     margin-top: 1rem;
+  }
+  .container h1 {
+    font-size: 1.4rem;
+  }
+  .container p {
+    font-size: 1.2rem;
+  }
+  .info li {
+    font-size: 1.2rem;
   }
   @media screen and (max-width: 450px) {
     .container h1 {

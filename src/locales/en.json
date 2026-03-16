@@ -26,7 +26,7 @@
   "contact": {
     "title": "Request a consultation !",
     "content": "Before registering for a course, a free 10-20 minute consultation is offered. Following this consultation, we will determine your registration, as well as the type, date, time, and number of classes.",
-    "name": "Your name:",
+    "name": "Name:",
     "name_placeholder": "Name",
     "age": "Age :",
     "age_placeholder": "Age",
@@ -34,7 +34,7 @@
     "country_placeholder": "Ex : France",
     "email": "Email :",
     "email_placeholder": "{account}{'@'}{domain}",
-    "message": "Your message:",
+    "message": "Message:",
     "message_placeholder": "Please state your reasons for wanting to study Korean, your current level, the class schedule you would like to attend, and any questions you would like to ask.",
     "validation": "Send",
     "success": "Your message has been successfully sent!",

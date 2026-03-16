@@ -251,7 +251,7 @@ const handleSubmit = () => {
 @media screen and (max-width: 1160px) {
   .form-container {
     width: 80vw;
-    height: 60dvh;
+    height: auto;
   }
 }
 @media screen and (max-width: 450px) {
