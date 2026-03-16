@@ -44,6 +44,11 @@ const closeSidebar = () => {
         >
       </li>
       <li>
+        <RouterLink :to="{ name: 'ClassInfoPage' }" @click="closeSidebar">
+          {{ $t('menu.class') }}</RouterLink
+        >
+      </li>
+      <li>
         <RouterLink :to="{ name: 'ContactPage' }" @click="closeSidebar">
           {{ $t('menu.contact') }}
         </RouterLink>
@@ -135,6 +140,17 @@ const closeSidebar = () => {
   position: fixed;
   inset: 0;
   z-index: 9;
+}
+@media screen and (max-width: 900px) {
+  .header-nav a {
+    font-size: 1.6em;
+    padding: 1em 0.7em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header-nav a {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 768px) {

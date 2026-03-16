@@ -15,8 +15,8 @@
       </Transition>
       <Transition name="fade" appear>
         <div class="buttons">
-          <RouterLink :to="{ name: 'AboutPage' }">
-            <button>{{ $t('menu.about') }}</button>
+          <RouterLink :to="{ name: 'ClassInfoPage' }">
+            <button>{{ $t('menu.class') }}</button>
           </RouterLink>
           <RouterLink :to="{ name: 'ContactPage' }">
             <button>{{ $t('menu.contact') }}</button>

@@ -2,10 +2,12 @@ import Homepage from './pages/HomePage.vue'
 import AboutPage from './pages/AboutPage.vue'
 import ContactPage from './pages/ContactPage.vue'
 import NotFoundPage from './pages/NotFoundPage.vue'
+import ClassInfoPage from '@/pages/ClassInfoPage.vue'
 
 export const routes = [
   { path: '/', component: Homepage, name: 'HomePage' },
   { path: '/about', component: AboutPage, name: 'AboutPage' },
   { path: '/contact', component: ContactPage, name: 'ContactPage' },
+  { path: '/class', component: ClassInfoPage, name: 'ClassInfoPage' },
   { path: '/:pathMatch(.*)*', component: NotFoundPage },
 ]

@@ -2,6 +2,7 @@
   "menu": {
     "home": "Home",
     "about": "About",
+    "class": "Course",
     "contact": "Contact"
   },
   "home": {
@@ -23,6 +24,39 @@
     "language2": "French (B2)",
     "language3": "English (B1)"
   },
+  "info": {
+    "title": "Prices and types of courses",
+    "table1": "1. Korean lessons",
+    "table1_subtitle": "(Private lessons, 1 hour)",
+    "table1_head1": "Beginner",
+    "table1_head2": "Intermediate",
+    "table1_head3": "Advanced",
+    "table1_head4": "Price",
+    "table1_col1": "Conversation",
+    "table1_col2": "Grammar",
+    "table1_col3": "Reading / Writing",
+    "table2": "2. Preparation of TOPIK I and II",
+    "table2_subtitle": "(Private lessons, 1 hour)",
+    "table2_head1": "Beginner",
+    "table2_head2": "Intermediate",
+    "table2_head3": "Advanced",
+    "table2_head4": "Price",
+    "table2_subhead1": "1",
+    "table2_subhead2": "2",
+    "table2_subhead3": "3",
+    "table2_subhead4": "4",
+    "table2_subhead5": "5",
+    "table2_subhead6": "6",
+    "table2_col1": "Listening / Reading Comprehension",
+    "table2_col2": "Written production",
+    "info1": "All levels available, from beginner to advanced.",
+    "info2": "All types of courses available: Topik I/II preparation, Korean conversation, grammar learning, reading and writing, etc.",
+    "info3": "A 20-30 minute preparatory meeting will take place before registration for the course (free). ",
+    "info4": "Normally, the lesson lasts 1 hour. But you can request the duration of the lesson you want (30 min, 1h 30, etc.) and the price will change according to the duration.",
+    "info5": "The class will take place on Zoom. I will send you the link by email or SMS.",
+    "info6": "The manual is not mandatory. You can view the course content on the screen.",
+    "info7": "During classes, speaking in Korean is recommended, but you can speak in French or English if necessary."
+  },
   "contact": {
     "title": "Request a consultation !",
     "content": "Before registering for a course, a free 10-20 minute consultation is offered. Following this consultation, we will determine your registration, as well as the type, date, time, and number of classes.",
@@ -38,13 +72,6 @@
     "message_placeholder": "Please state your reasons for wanting to study Korean, your current level, the class schedule you would like to attend, and any questions you would like to ask.",
     "validation": "Send",
     "success": "Your message has been successfully sent!",
-    "error": "Error. Please try again.",
-    "info1": "All levels available, from beginner to advanced.",
-    "info2": "All types of courses available: Topik I/II preparation, Korean conversation, grammar learning, reading and writing, etc.",
-    "info3": "A 20-30 minute preparatory meeting will take place before registration for the course (free). ",
-    "info4": "Normally, the lesson lasts 1 hour. But you can request the duration of the lesson you want (30 min, 1h 30, etc.) and the price will change according to the duration.",
-    "info5": "The class will take place on Zoom. I will send you the link by email or SMS.",
-    "info6": "The manual is not mandatory. You can view the course content on the screen.",
-    "info7": "During classes, speaking in Korean is recommended, but you can speak in French or English if necessary."
+    "error": "Error. Please try again."
   }
 }

@@ -2,6 +2,7 @@
   "menu": {
     "home": "Accueil",
     "about": "A propos",
+    "class": "Cours",
     "contact": "Contact"
   },
   "home": {
@@ -23,6 +24,39 @@
     "language2": "Français (B2)",
     "language3": "Anglais (B1)"
   },
+  "info": {
+    "title": "Tarifs et types de cours",
+    "table1": "1. Cours de coréen",
+    "table1_subtitle": "(Cours particuliers, 1h)",
+    "table1_head1": "Débutant",
+    "table1_head2": "Intermédiaire",
+    "table1_head3": "Avancé",
+    "table1_head4": "Prix",
+    "table1_col1": "Conversation",
+    "table1_col2": "Grammaire",
+    "table1_col3": "Lecture / Ecriture",
+    "table2": "2. Préparation de TOPIK I et II",
+    "table2_subtitle": "(Cours particuliers, 1h)",
+    "table2_head1": "Débutant",
+    "table2_head2": "Intermédiaire",
+    "table2_head3": "Avancé",
+    "table2_head4": "Prix",
+    "table2_subhead1": "1",
+    "table2_subhead2": "2",
+    "table2_subhead3": "3",
+    "table2_subhead4": "4",
+    "table2_subhead5": "5",
+    "table2_subhead6": "6",
+    "table2_col1": "Compréhension orale / écrite",
+    "table2_col2": "Production écrite",
+    "info1": "Tous niveaux disponibles, du débutant à avancé.",
+    "info2": "Tous types de cours disponibles : préparation du Topik I/II, discuter en coréen, apprendre la grammaire, lire et écrire, etc.",
+    "info3": "Une réunion préparatoire de 20 à 30 minutes aura lieu avant l'inscription au cours (gratuit).",
+    "info4": "Normalement, le cours dure 1h. Mais vous pouvez demander la durée du cours que vous voulez(30 min, 1h 30, etc.) et le tarif changera selon la durée.",
+    "info5": "Le cours aura lieu sur Zoom. Je vais vous envoyer le lien par e-mail ou SMS.",
+    "info6": "Le manuel n'est pas obligatoire. Vous pouvez voir sur l'écran le contenu du cours.",
+    "info7": "Pendant les cours, parler toujours en coréen est recommandé, mais vous pouvez parler en français ou en anglais si c'est nécessaire."
+  },
   "contact": {
     "title": "Demandez une consultation !",
     "content": "Avant toute inscription à un cours, une consultation gratuite de 10 à 20 minutes est organisée. Suite à cette consultation, nous déterminerons votre inscription, ainsi que le type, la date, l'heure et le nombre de cours.",
@@ -38,13 +72,6 @@
     "message_placeholder": "Veuillez indiquer les raisons pour lesquelles vous souhaitez étudier le coréen, votre niveau actuel, l'horaire des cours que vous souhaitez suivre, ainsi que toutes les questions que vous aimeriez poser.",
     "validation": "Envoyer",
     "success": "Votre message a bien été envoyer !",
-    "error": "Erreur.. Veuillez réessayer",
-    "info1": "Tous niveaux disponibles, du débutant à avancé.",
-    "info2": "Tous types de cours disponibles : préparation du Topik I/II, discuter en coréen, apprendre la grammaire, lire et écrire, etc.",
-    "info3": "Une réunion préparatoire de 20 à 30 minutes aura lieu avant l'inscription au cours (gratuit).",
-    "info4": "Normalement, le cours dure 1h. Mais vous pouvez demander la durée du cours que vous voulez(30 min, 1h 30, etc.) et le tarif changera selon la durée.",
-    "info5": "Le cours aura lieu sur Zoom. Je vais vous envoyer le lien par e-mail ou SMS.",
-    "info6": "Le manuel n'est pas obligatoire. Vous pouvez voir sur l'écran le contenu du cours.",
-    "info7": "Pendant les cours, parler toujours en coréen est recommandé, mais vous pouvez parler en français ou en anglais si c'est nécessaire."
+    "error": "Erreur.. Veuillez réessayer"
   }
 }

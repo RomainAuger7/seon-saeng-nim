@@ -9,17 +9,6 @@ import ContactForm from '../components/ContactForm.vue'
     <Transition name="fade-in" appear>
       <ContactForm />
     </Transition>
-    <div class="info">
-      <ul>
-        <li>{{ $t('contact.info1') }}</li>
-        <li>{{ $t('contact.info2') }}</li>
-        <li>{{ $t('contact.info3') }}</li>
-        <li>{{ $t('contact.info4') }}</li>
-        <li>{{ $t('contact.info5') }}</li>
-        <li>{{ $t('contact.info6') }}</li>
-        <li>{{ $t('contact.info7') }}</li>
-      </ul>
-    </div>
   </div>
 </template>
 
@@ -29,15 +18,9 @@ import ContactForm from '../components/ContactForm.vue'
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   height: auto;
-  gap: 2rem;
-}
-.form-container {
-  margin-top: 3rem;
-}
-.img-container img {
-  z-index: -3;
+  gap: 1rem;
 }
 .container h1 {
   font-size: 2rem;
@@ -45,12 +28,6 @@ import ContactForm from '../components/ContactForm.vue'
 .container p {
   font-size: 1.5rem;
   padding: 0 1rem;
-}
-.info {
-  padding: 1rem 2.5rem;
-}
-.info li {
-  font-size: 1.5rem;
 }
 .fade-in-enter-active,
 .fade-enter-active {
