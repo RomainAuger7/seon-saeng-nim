@@ -33,6 +33,7 @@ import ClassInfoTable from '@/components/ClassInfoTable.vue'
   font-size: 1.6rem;
 }
 .table {
+  overflow-x: auto;
   width: 70%;
 }
 .info {

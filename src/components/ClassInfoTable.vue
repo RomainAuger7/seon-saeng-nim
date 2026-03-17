@@ -98,10 +98,6 @@ const topikClasses = [
 </template>
 
 <style scoped>
-.pricing-tables {
-  font-family: sans-serif;
-}
-
 section {
   margin-bottom: 2rem;
 }
@@ -121,7 +117,7 @@ table {
   width: 100%;
   border: #141414 1px solid;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 th,
@@ -137,5 +133,31 @@ thead tr {
 
 tbody tr {
   background: white;
+}
+@media screen and (max-width: 650px) {
+  th,
+  td {
+    font-size: 1rem;
+    padding: 2px 4px;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  th,
+  td {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  th,
+  td {
+    font-size: 0.8rem;
+    padding: 1px 3px;
+  }
 }
 </style>
