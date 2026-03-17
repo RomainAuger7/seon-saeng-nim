@@ -160,16 +160,6 @@
   transition: opacity 1s ease-out;
   opacity: 1;
 }
-
-@keyframes scaling {
-  0% {
-    transform: translateY(400px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
 @media screen and (max-width: 1000px) {
   .container {
     height: auto;
