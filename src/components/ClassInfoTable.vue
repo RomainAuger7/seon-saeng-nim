@@ -1,16 +1,18 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
+const { locale } = useI18n()
+const isVisible = ref(false)
 const col1 = computed(() => t('info.table1_col1'))
 const col2 = computed(() => t('info.table1_col2'))
 const col3 = computed(() => t('info.table1_col3'))
 const col4 = computed(() => t('info.table2_col1'))
 const col5 = computed(() => t('info.table2_col2'))
 const generalClasses = [
-  { name: col1, beginner: true, intermediate: true, advanced: true, price: '25€' },
-  { name: col2, beginner: false, intermediate: true, advanced: true, price: '30€' },
-  { name: col3, beginner: false, intermediate: true, advanced: true, price: '30€' },
+  { name: col1, beginner: true, intermediate: true, advanced: true, price: '25€ / 30$' },
+  { name: col2, beginner: false, intermediate: true, advanced: true, price: '30€ / 35$' },
+  { name: col3, beginner: false, intermediate: true, advanced: true, price: '30€ / 35$' },
 ]
 
 const topikClasses = [
@@ -22,9 +24,9 @@ const topikClasses = [
     g4: true,
     g5: true,
     g6: true,
-    price: '30€',
+    price: '30€ / 35$',
   },
-  { name: col5, g1: false, g2: false, g3: true, g4: true, g5: true, g6: true, price: '30€' },
+  { name: col5, g1: false, g2: false, g3: true, g4: true, g5: true, g6: true, price: '30€ / 35$' },
 ]
 </script>
 <template>
@@ -41,7 +43,7 @@ const topikClasses = [
             <th>{{ $t('info.table1_head1') }}</th>
             <th>{{ $t('info.table1_head2') }}</th>
             <th>{{ $t('info.table1_head3') }}</th>
-            <th>{{ $t('info.table1_head4') }}</th>
+            <th v-show="locale !== 'kr'">{{ $t('info.table1_head4') }}</th>
           </tr>
         </thead>
         <tbody>
@@ -50,7 +52,7 @@ const topikClasses = [
             <td>{{ row.beginner ? '✓' : '' }}</td>
             <td>{{ row.intermediate ? '✓' : '' }}</td>
             <td>{{ row.advanced ? '✓' : '' }}</td>
-            <td>{{ row.price }}</td>
+            <td v-show="locale !== 'kr'">{{ row.price }}</td>
           </tr>
         </tbody>
       </table>
@@ -67,7 +69,7 @@ const topikClasses = [
             <th rowspan="3"></th>
             <th colspan="2">I</th>
             <th colspan="4">II</th>
-            <th rowspan="3">{{ $t('info.table2_head4') }}</th>
+            <th v-show="locale !== 'kr'" rowspan="3">{{ $t('info.table2_head4') }}</th>
           </tr>
           <tr>
             <th colspan="2">{{ $t('info.table2_head1') }}</th>
@@ -89,7 +91,7 @@ const topikClasses = [
             <td v-for="level in ['g1', 'g2', 'g3', 'g4', 'g5', 'g6']" :key="level">
               {{ row[level] ? '✓' : '' }}
             </td>
-            <td>{{ row.price }}</td>
+            <td v-show="locale !== 'kr'">{{ row.price }}</td>
           </tr>
         </tbody>
       </table>
